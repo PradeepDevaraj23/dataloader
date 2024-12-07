@@ -10,8 +10,7 @@ import java.util.Date;
 @Data
 public class CompanyData {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "company_data_seq")
-    @SequenceGenerator(name = "company_data_seq", sequenceName = "company_data_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(unique = true)
     private String symbol;

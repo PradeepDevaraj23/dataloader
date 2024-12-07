@@ -12,4 +12,3 @@ CREATE TABLE company_data (
   CONSTRAINT equity_sequence UNIQUE (symbol)
 );
 
-CREATE SEQUENCE IF NOT EXISTS company_data_seq START 1 INCREMENT 1;
